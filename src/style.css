@@ -8,8 +8,21 @@ body{
 }
 .grid{
   display: grid;
+  grid-gap: 64px;
+}
+.grid-2-columns{
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns{
   grid-template-columns: 1fr 2fr 2fr;
-
+}
+section{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.img-responsive{
+  max-width: 100%;
 }
 header{
   background-image:linear-gradient(
@@ -23,19 +36,19 @@ header{
   padding: 200px 0;
 }
 header h1{
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 96px;
   line-height: 1;
   margin:30px 0;
 }
 header h2{
-  font-weight: 400px;
+  font-weight: 400;
   font-size:48px ;
   line-height:1.5 ;
   margin: 0;
 }
 header h3{
-  font-weight: 900px;
+  font-weight: 900;
   font-size:24px ;
   line-height:1.5 ;
   margin: 0;
@@ -43,7 +56,7 @@ header h3{
 
 }
 header a {
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
@@ -55,7 +68,38 @@ header a {
   padding:16px 32px ;
   display: inline-block;
   margin-top: 30px;
-}footer{
+}
+main{
+  background-color: white;
+}
+main h2{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.3;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+main h3{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+}
+main p{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
+
+}
+
+footer{
   color: white;
   background-image:linear-gradient(
   rgba(39, 32 ,68, 0.9),
@@ -63,7 +107,7 @@ header a {
    url("../images/cape-town.jpg");
    background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
+  
 
 }
 footer h3{
@@ -80,7 +124,7 @@ footer p {
   font-size: 16px;
   line-height: 24px;
   opacity: 0.7;
-  margin-right: 20px;
+  
 }
 footer ul{
   padding: 0;
@@ -109,6 +153,13 @@ opacity:0.7;
   }
   header h3{
     font-size: 12px;
+  }
+  .grid{
+    grid-template-columns: 1fr;
+    grid: gap 32px;
+  }
+  section{
+    padding:30px 0;
   }
 }
 
